@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block a %}
+
+<form method="POST" action="">
+    {{ form.hidden_tag() }}
+    <div class="block p-6 rounded-lg bg-white max-w-sm m-auto">
+         
+        <div class='text-2xl mb-10 text-center font-bold'>
+            <div class="my-6">Tracking active from</div>
+            <div class="text-3xl my-12">{{ time }}</div>
+            for space ID <div class="text-5xl my-6">{{ space }}</div>
+        </div>
+
+        <div>
+            {{ form.submit(class=submit) }}
+        </div>
+      
+    </div>
+  </form>
+
+{% endblock a %}
